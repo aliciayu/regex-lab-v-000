@@ -17,7 +17,7 @@ end
 def valid_phone_number?(phone)
   if phone.match(/\d.+\b/)
     true
-  else
+  elsif phone.match(/\D\W/)
     false
   end
 end
